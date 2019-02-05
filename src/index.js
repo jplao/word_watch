@@ -34,6 +34,7 @@ function postWords(word_to_post){
       'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
     })
+    .then(response => console.log(response))
     .catch(error => console.error(error))
 }
 
